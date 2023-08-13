@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant website</title>  
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">       
+    <script>
+    function validate() {
+    let n = document.getElementById('N').value.trim();
+    let l = document.getElementById('L').value.trim();
+    let e = document.getElementById('E').value.trim();
+    let ph = document.getElementById('ph').value.trim();
+    let p = document.getElementById('P').value.trim();
+    let q = document.getElementById('question').value.trim();
+
+    if (n === "") {
+        alert("Please fill in your first name");
+    }
+    if (l === "") {
+        alert("Please fill in your last name");
+    }
+    if (e === "") {
+        alert("Please fill in your email");
+    }
+    if (ph === "") {
+        alert("Please fill in your contact");
+    }
+    if (p === "") {
+        alert("Please enter your answer");
+    }
+    if (q === "") {
+        alert("Please enter your question");
+    }
+}
+    </script>
+    <style>
+        
+        
+        .hero {
+            background-image: url('hero-bg.jpg');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            padding: 6rem 0;
+            text-align: center;
+            margin-top: 2rem;
+        }
+
+        .container h2 {
+            color: #FFD700;
+        }
+
+        .container p {
+            color: #555;
+        }
+
+        .grid {
+            display: grid;
+            gap: 2rem;
+        }
+
+        ul {
+            padding-left: 1rem;
+            list-style-type: disc;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 1rem 0;
+        }
+        header h1{
+text-align: left;
+        position: absolute;
+        top: 0;
+  left: 0;
+padding: 1rem;
+font-size: 3rem;
+font-weight: bold;        
+        }
+        .nav {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.nav ul {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav ul li {
+  margin-right: 1.5rem;
+  text-decoration: none;
+}
+
+.nav ul li a {
+  font-weight: bold;
+}
+                        img{
+                            border-radius: 50%;
+                            margin-left: auto;
+                            margin-right: auto;
+                        }
+                        .hero h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding: 1.5rem;
+}
+
+.hero h2 {
+  font-size: 1.5rem;
+}
+.container {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+.container h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  padding: 1.5rem;
+  text-align: center;
+}
+.grid {
+  display: grid;
+}
+.text-xl {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+ul {
+  padding-left: 1rem;
+  list-style-type: disc;
+}
+
+p strong {
+  font-weight: bold;
+}
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Delicious flavors, unforgettable moments.</h1>
+        <nav class="nav">
+            <ul>
+                <li><a href="#home" class="mr-6 font-bold">Home</a></li>
+                <li><a href="#about" class="mr-6 font-bold">About</a></li>
+                <li><a href="#menu" class="mr-6 font-bold">Menu</a></li>
+                <li><a href="#contact" class="mr-6 font-bold">Contact</a></li>
+            </ul>
+          </nav>
+          </header>
+          <img src="restaurant logo.jpg" alt="logo">
+          <section id="home">
+            <div class="hero">
+                <h1>Welcome to our restaurant</h1>
+                <h2>Experience the finest Culinary Delights</h2>
+            </div>
+        </section>
+        <section id="about">
+            <div class="container">
+                <h2>About Us</h2>
+                <div class="grid">
+                    <div>
+                        <h3 class="text-xl">Our History</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam finibus mauris vitae sapien vestibulum, ac gravida nulla lacinia.
+                            Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae; Phasellus malesuada consectetur magna, in rhoncus lorem vestibulum ut.
+                            Fusce tincidunt euismod mauris ut lobortis. Sed malesuada consectetur lectus nec eleifend.</p>
+                    </div>
+                    <div>
+                        <h3 class="text-xl">Our Values</h3>
+                        <ul>
+                            <li>Quality ingredients sourced locally</li>
+                            <li>Passionate and talented chefs</li>
+                            <li>Exceptional customer service</li>
+                            <li>Creating memorable dining experiences</li>
+                        </ul>
+                    </div>
+                    <div>
+                        <h3 class="text-xl">Restaurant Information</h3>
+                        <p><strong>Location:</strong> 123 Main Street, City, State</p>
+                        <p><strong>Hours of Operation:</strong> Monday - Saturday: 11:00 AM - 10:00 PM, Sunday: 12:00 PM - 9:00 PM</p>
+                        <p><strong>Reservations:</strong> Call us at 123-456-7890 or make a reservation online.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="menu">
+            <div class="container mx-auto">
+                <h1 class="text-3xl font-bold text-center p-4">Menu</h1>
+                <a href="https://get.popmenu.com/post/restaurant-menu-ideas">
+                    <img class="rounded-lg shadow-lg mx-auto" src="menu.jpg" alt="menu">
+                </a>
+            </div>
+        </section>
+        
+        
+    <section id="contact">
+        <div class="cont">
+            <h1 class="text-3xl font-bold text-center p-4">Contact</h1>
+            <form class="max-w-md mx-auto p-4 bg-white shadow-md rounded-md">
+                <div class="mb-4">
+                First Name: <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" type="text" id="N" placeholder="Enter your first name...">
+                Last Name: <input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" type="text" id="L" placeholder="Enter your last name"></div>
+                <div class="mb-4">
+                Email Address: <input  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" type="email" id="E" placeholder="Enter Email"></div>
+                Phone number: <input type="number" id="ph" placeholder="Enter phone number">
+                <p>Do you like our restaurant?</p>
+                <label><input class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500" type="radio" name="like" id="P" value="yes"> Yes</label>
+                <label><input type="radio" name="like" id="P" value="no"> No</label>
+                 <div class="mb-6">
+                <label class="block text-gray-700 text-sm font-bold mb-2"  for="question">What can we do for you?</label>
+                <input  class="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:border-indigo-500"  type="text" id="question" name="question"></div>
+                <center><input class="w-full bg-indigo-500 text-white font-bold py-2 px-4 rounded-md hover:bg-indigo-700" type="button" value="Submit" onclick="validate()"></center>  
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div class="flex justify-center items-center">
+            <a href="https://www.instagram.com/fiorestaurants/?hl=en"><img class="w-10 h-10 mr-4" src="Insta.jpg" alt="Instagram"></a>
+            <a href="https://www.facebook.com/redtractorpizza"><img class="w-10 h-10" src="facebook.jpg" alt="Facebook"></a>
+          </div>
+    </footer>
+</body>
+</html>
